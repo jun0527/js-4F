@@ -1,0 +1,49 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+}
+.wrap {
+  width: 540px;
+  margin: 72px auto;
+}
+.title {
+  font-size: 72px;
+  line-height: 78px;
+  font-weight: 900;
+  border-top: 10px solid #000;
+  border-bottom: 10px solid #000;
+  margin-bottom: 32px;
+}
+.worldClock {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3px 40px;
+  border-right: 2px solid #000;
+  border-left: 2px solid #000;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  &:nth-child(1),
+  &:nth-last-child(1) {
+    background: #000;
+    color: #fff;
+  }
+  h2 {
+    font-size: 36px;
+    line-height: 49px;
+  }
+  .date {
+    font-style: italic;
+    line-height: 22px;
+  }
+  .time {
+    font-size: 72px;
+    line-height: 98px;
+  }
+}
+.flashing {
+  opacity: 0;
+}
